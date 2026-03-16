@@ -14,7 +14,7 @@ mensagem: document.getElementById("mensagem").value
 
 }
 
-await fetch("http://localhost:3000/pedido",{
+await fetch("https://ajuda-humanitaria-api.onrender.com/pedido",{
 
 method:"POST",
 headers:{
@@ -32,7 +32,7 @@ async function carregar(){
 
 lista.innerHTML=""
 
-const res = await fetch("http://localhost:3000/pedidos")
+const res = await fetch("https://ajuda-humanitaria-api.onrender.com/pedidos")
 
 const dados = await res.json()
 
